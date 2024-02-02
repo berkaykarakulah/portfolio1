@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+body {
+  background-color: #000;
+}
+
+.general-container {
+  background-image: url(foto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  max-width: 1350px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 90px;
+}
+
+.aboutmedescscreen {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  max-width: 900px;
+  height: 290px;
+  padding: 0 50px 0 50px;
+  display: none;
+  text-align: center;
+  border: 1px solid #fff;
+  transition: width 0.5s, height 0.5s, background-color 0.5s;
+}
+
+.paragraph {
+  position: relative;
+  padding-top: 30px;
+}
+
+.menu {
+  width: 600px;
+  border-radius: 5px;
+  height: 50vh;
+  display: flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.menu-bar {
+  font-size: 30px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 40px;
+}
+
+.menubar-items:hover {
+  color: #ce2029;
+}
+
+.menubar-items {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+#social-media {
+  position: relative;
+  cursor: pointer;
+}
+
+.general-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.name {
+  color: #fff;
+  font-size: 80px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.ayem {
+  position: relative;
+  color: #fff;
+  font-size: 80px;
+  font-family: "Kanit", sans-serif;
+}
+
+.animation_text{
+    padding-bottom: 60px;
+}
+
+.typewrite {
+  color: #fff;
+  font-size: 80px;
+  position: relative;
+  font-family: "Kanit", sans-serif;
+}
+
+.hello {
+  color: #ce2029;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+
+.social-media-screen {
+  display: flex;
+  gap: 30px;
+  font-size: 50px;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+}
+
+.hamburger-cards {
+  max-width: 1350px;
+  height: 50px;
+  position: relative;
+  margin: 100px 0 0 400px;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.cards {
+  color: #fff;
+  position: absolute;
+  left: 40px;
+  bottom: 14px;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.btn {
+  padding: 15px 30px 15px 30px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  position: relative;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#hamburger {
+  position: absolute;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #ce2029;
+  margin: 5px;
+}
+
+#down {
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 842px) {
+  .hamburger-cards{
+    right:380px;
+  }
+  .cards{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+    .hamburger-cards{
+      right: 200px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .menu{
+    margin-right: 50px;
+    }  
+}
+
+@media screen and (max-width: 842px) {
+    .menu{
+    margin-right: -250px;
+    }  
+}
+
+@media screen and (max-width: 260px) {
+        .hamburger-cards{
+          right: 50px;
+        }
+    }
